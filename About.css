@@ -1,0 +1,296 @@
+*{
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* About Section Starts here */
+
+.abtcontainer{
+    position: fixed;
+    width: 80%;
+    right: -150%;
+    background: rgb(26, 26, 26);
+    height: 100vh;
+    opacity: 0;
+    z-index: 2;
+    visibility: hidden;
+    transition: all 0.5s;
+    color: white;
+    overflow-y: visible;
+}
+
+.abtcontainerVisi{
+    opacity: 1;
+    visibility: visible;
+    right: 0%;
+}
+
+.aboutContent{
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+.abtcontainerVisi .aboutContent .abt{
+
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    position: relative;
+    overflow: visible;
+
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 60px;
+        height: 3px;
+        background-color: rgb(255, 102, 0);
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: -9px;
+        left: 0;
+        width: 30px;
+        height: 3px;
+        background-color: rgb(255, 102, 0);
+    }
+
+}   
+
+.aboutContent h2{
+    margin-top: 50px;
+    letter-spacing:1px;
+}
+
+.ch-color{
+    color: rgb(255, 102, 0);
+}
+
+.aboutContent .para{
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.aboutContent .abtBox{
+    display: flex;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.aboutContent .abtBox .coloum1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.aboutContent .abtBox .coloum1 p{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.322);
+    padding: 10px 0px;
+}
+
+.aboutContent .abtBox .coloum1 .hNames{
+
+    color:rgba(255, 255, 255, 0.712);
+
+}
+
+.aboutContent .abtBox .col{
+    margin-left: 60px;
+    margin-top: 10px;
+    width: 30%;
+}
+
+.aboutContent .abtBox .percent1{
+    width: 100%;
+    height: 8px;
+    margin-top: -20px;
+    background: rgb(48, 48, 48);
+    border-radius: 10px;
+    position: relative;
+    overflow: visible;
+
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 8px;
+        background-color: rgb(255, 102, 0);
+        border-radius: 10px;
+    }
+
+    &::after{
+        content: "90%";
+        position: absolute;
+        top: -32px;
+        right: 0;
+        border-radius: 10px;
+    }
+}
+
+
+.aboutContent .abtBox .percent2{
+    width: 100%;
+    height: 8px;
+    margin-top: -20px;
+    background: rgb(48, 48, 48);
+    border-radius: 10px;
+    position: relative;
+    overflow: visible;
+
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 85%;
+        height: 8px;
+        background-color: rgb(255, 102, 0);
+        border-radius: 10px;
+    }
+
+    &::after{
+        content: "85%";
+        position: absolute;
+        top: -32px;
+        right: 0;
+        border-radius: 10px;
+    }
+}
+
+.aboutContent .abtBox .percent3{
+    width: 100%;
+    height: 8px;
+    margin-top: -20px;
+    background: rgb(48, 48, 48);
+    border-radius: 10px;
+    position: relative;
+    overflow: visible;
+
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 78%;
+        height: 8px;
+        background-color: rgb(255, 102, 0);
+        border-radius: 10px;
+    }
+
+    &::after{
+        content: "78%";
+        position: absolute;
+        top: -32px;
+        right: 0;
+        border-radius: 10px;
+    }
+}
+
+
+.colum2{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.colum2 .educ{
+    width: 500px;
+}
+
+.colum2 .educ .edBox{
+    position: relative;
+    margin-top: 50px;
+    padding: 20px 50px;
+    padding-bottom: 40px;
+    background-color: rgba(48, 48, 48, 0.548);
+    backdrop-filter: blur(51px);
+    border-radius: 10px;
+    border: 1px solid rgb(151, 151, 151);
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 20%;
+        border-radius: 10px;
+        left: 25px;
+        width: 2px;
+        height: 70%;
+        background: rgb(255, 102, 0);
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 14%;
+        border-radius: 10px;
+        left: 16px;
+        width: 20px;
+        height: 20px;
+        background: rgb(255, 102, 0);
+    }
+}
+
+.colum2 .educ .edBox .date{
+    font-size: 12px;
+    font-weight: lighter;
+    color:  rgb(151, 151, 151);
+    letter-spacing: 2px;
+}
+
+
+.colum2 .educ .edBox h2{
+    font-size: 20px;
+    margin-top: 13px;
+    margin-bottom: 20px;
+}
+
+.colum2 .educ .edBox .paragraph{
+    font-size: 15px;
+    line-height: 30px;
+}
+
+
+
+
+@media(max-width: 1100px){
+    .abtcontainer{
+        width: 100%;
+    }
+    .aboutContent .para{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 920px){
+    .aboutContent .abtBox .col{
+        width: 80%;
+    }
+}
+
+@media(max-width: 540px){
+    .aboutContent .abtBox .col{
+        margin-left: -20px;
+    }
+}
+
+@media(min-width: 2560px){
+    .abtcontainer{
+        display: flex;
+        align-items: center;
+    }
+}

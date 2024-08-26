@@ -1,0 +1,255 @@
+*{
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* this all code is for services */
+
+.SerContainer{
+    width: 80%;
+    height: 100vh;
+    overflow: auto;
+    position: fixed;
+    background: rgb(26, 26, 26);
+    right: 250%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.ServiceVisi{
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    z-index: 3;
+}
+
+.serviceContent{
+    margin-left: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.SerContainer .serviceContent .ser, .Portheading, .contactHead{
+
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    position: relative;
+    overflow: visible;
+
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        height: 3px;
+        background-color: rgb(255, 102, 0);
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0px;
+        width: 30px;
+        height: 3px;
+        background-color: rgb(255, 102, 0);
+    }
+}
+
+.boxContainer{
+    display: flex;
+    margin-top: 100px;
+    gap: 20px;
+    justify-content: center;
+    overflow: visible;
+    flex-wrap: wrap;
+}
+
+
+.boxContainer .serboxes{
+    border: 1px solid white;
+    text-align: center;
+    background-color: rgba(48, 48, 48, 0.548);
+    backdrop-filter: blur(100px);
+    width: 300px;
+    height: 250px;
+    position: relative;
+    padding: 30px 20px;
+    border-radius: 10px;
+    overflow: visible;
+    color: white;
+    cursor: pointer;
+}
+
+
+.boxContainer .serboxes .fa{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: rgb(255, 102, 0);
+}
+
+.boxContainer .serboxes .sPara{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.icons{
+    position: absolute;
+    top:0px;
+    left: 27%;
+    overflow: visible;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in;
+    display: flex;
+    gap: 20px;
+}
+.iconsvisible{
+    top: -60px;
+    opacity: 1;
+    visibility: visible;
+}
+.fa-icons{
+    font-size: 50px;
+}
+
+.boxContainer .serboxes .webtn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+
+    &:hover{
+        color: white;
+        background-color: rgb(255, 102, 0);
+    }
+}
+/* Services code ends here */
+
+.overbody, .app-design, .web-design{
+    background-color: rgba(56, 56, 56, 0.342);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    visibility: hidden;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.overlay, .app, .web-de{
+    width: 500px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px solid rgb(104, 104, 104);
+    border-radius: 10px;
+    background-color: rgba(26, 26, 26, 0.993);
+    backdrop-filter: blur(10px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99999;
+    height: 400px;
+    text-align: center;
+    padding: 80px 40px 0px 40px;
+}
+
+.overlayVisi{
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlay h1{
+    color: rgb(255, 102, 0);
+    margin-top: -100px;
+}
+
+.overlay p{
+    color: white;
+    margin-top: 20px;
+}
+.overlay ul li{
+    line-height: 40px;
+}
+.overlay ul{
+    text-align: left;
+    color: white;
+    margin-top: 50px;
+}
+
+.fa-close{
+    position: absolute;
+    font-size: 30px;
+    color: rgb(255, 102, 0);
+    top: 3%;
+    right: 3%;
+    width: 40px;
+    cursor: pointer;
+}
+
+.overlay ul .fa-circle-check{
+    color: rgb(255, 102, 0);
+}
+
+
+/* responsive services */
+@media(min-width:2560px){
+    .boxContainer{
+       display: flex;
+       height: 100vh;
+       margin-top: -200px;
+       justify-content: space-around;
+       align-items: center;
+    }
+    .overlay, .app, .web-de{
+        transform: translateY(-50%);
+    }
+}
+
+@media(max-width:1100px){
+    .SerContainer{
+        width: 100%;
+    }
+}
+
+@media(max-width:700px){
+    .overlay, .app, .web-de{
+        width: 400px;
+        font-size: 12px;
+    }
+}
+@media(max-width:500px){
+    .overlay, .app, .web-de{
+        width: 300px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:400px){
+    .overlay, .app, .web-de{
+        width: 250px;
+        font-size: 12px;
+    }
+}
+@media(max-width:300px){
+    .overlay, .app, .web-de{
+        width: 150px;
+        font-size: 8px;
+    }
+}
